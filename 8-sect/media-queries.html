@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+
+    <!-- 
+TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+-->
+
+    <style>
+        body {
+          background-color: aquamarine;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background-color: lightsalmon;
+            }
+        }
+        @media (min-width: 481px) and (max-width: 1200px) {
+            body {
+                background-color: powderblue;
+            }
+        }
+        @media (min-width: 1201px) and (max-width: 1600px)  {
+            body {
+                background-color: limegreen;
+            }
+        }
+        @media (min-width: 1601px) {
+            body {
+                background-color: seagreen;
+            }
+        }
+      </style>
+</head>
+<body>
+    <h1>Media Query</h1>
+    <ul>
+        <li>@media(max-width: 600px){ <br> h1{font-size: 15px;}} <b>targets smaller screens</b></li>
+        <li>@media(min-width: 600px) { <br> h1{font-size: 25px;} } <b> targets larger screens</b></li>
+        <li>combine: @media(max-width: 600px) and (min-width: 600px) { css properties here } </li>
+    </ul>
+    
+</body>
+</html>

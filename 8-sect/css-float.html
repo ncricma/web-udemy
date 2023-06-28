@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float</title>
+    <style>
+        *{
+            margin: 2px;
+        }
+        .header{
+            border: 2px solid;
+            text-align: center;
+        }
+        .sidebar{
+            border: 2px solid;
+            text-align: center;
+            height: 300px;
+            width: 20%;
+            float: left;
+        }
+        .main-content{
+            border: 2px solid;
+            text-align: center;
+            height: 300px;
+            width: 75%;
+            float: right;
+        }
+        .footer{
+            border: 2px solid;
+            clear: both;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Float</h1>
+    <ul>
+        <li><b>float : left; or right;</b> to move the element left or right and wrap other things around it</li>
+        <li><b>clear: left or right;</b> to protect the element form wrapping around the float element and goes to next line</li>
+        <li><a href="./float-ex.html">Exercise</a></li>
+    </ul>
+    
+    <div class="header"><h2>Header</h2></div>
+    <div class="sidebar"><h3>Sidebar</h3></div>
+    <div class="main-content"><h3>Main content</h3></div>
+    <div class="footer"><h4>Footer</h4></div>
+</body>
+</html>
